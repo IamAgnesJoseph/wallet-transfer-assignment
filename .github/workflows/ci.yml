@@ -17,9 +17,16 @@ jobs:
       LINT_CMD: ${{ vars.LINT_CMD }}
       FORMAT_CHECK_CMD: ${{ vars.FORMAT_CHECK_CMD }}
       TEST_CMD: ${{ vars.TEST_CMD }}
+      CGO_ENABLED: ${{ vars.CGO_ENABLED }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Check OS
+        run: cat /etc/os-release
+
+      - name: Install gcc
+        run: sudo apt-get update && sudo apt-get install -y gcc
 
       - name: Setup Go
         uses: actions/setup-go@v5
