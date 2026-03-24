@@ -370,6 +370,15 @@ Focus on correctness and clarity.
 
 ---
 
+## AI usage
+
+You are free to use AI tools responsibly. 
+
+Please include a note in your PR about how you used AI and what prompts you used. Good use of AI to 
+create a quality solution is a plus point. Blindly using it to solve the entire problem is not. 
+
+We will have a short discussion on your PR and you should be able to to explain the PR and what all you did.
+
 ## Optional Enhancements
 
 If time permits, you may also include:
